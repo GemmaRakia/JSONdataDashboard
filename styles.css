@@ -1,0 +1,340 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #0f1424;
+  color: white;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  font-family: 'Rubik', sans-serif;
+}
+
+@media only screen and (max-width: 37.5rem) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 200%;
+  }
+}
+
+.container__user {
+  background-color: #1c1f4a;
+  height: 25rem;
+  width: 13rem;
+  border-radius: 1rem;
+  margin: 2rem;
+}
+
+@media only screen and (max-width: 37.5rem) {
+  .container__user {
+    width: 80vw;
+    height: 15rem;
+  }
+}
+
+.container__user--details {
+  height: 70%;
+  border-radius: 1rem;
+  background-color: #5847eb;
+  padding: 2rem;
+}
+
+@media only screen and (max-width: 37.5rem) {
+  .container__user--details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 70%;
+  }
+  .container__user--details-box {
+    margin-left: 2rem;
+  }
+}
+
+.container__user--time {
+  padding: 1.5rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container__user--time a {
+  color: rgba(255, 255, 255, 0.459);
+  text-decoration: none;
+  text-transform: capitalize;
+  margin-bottom: .8rem;
+  font-size: .8rem;
+}
+
+.container__user--time a:hover {
+  color: white;
+}
+
+.container__user--time a.active {
+  color: white;
+}
+
+@media only screen and (max-width: 37.5rem) {
+  .container__user--time {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+.container__activities--top, .container__activities--bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container__activities--top .card, .container__activities--bottom .card {
+  height: 11.5rem;
+  width: 13rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.container__activities--top .card .work-card,
+.container__activities--top .card .play-card,
+.container__activities--top .card .study-card,
+.container__activities--top .card .exercise-card,
+.container__activities--top .card .social-card,
+.container__activities--top .card .self-card, .container__activities--bottom .card .work-card,
+.container__activities--bottom .card .play-card,
+.container__activities--bottom .card .study-card,
+.container__activities--bottom .card .exercise-card,
+.container__activities--bottom .card .social-card,
+.container__activities--bottom .card .self-card {
+  height: 9rem;
+  background-color: #1c1f4a;
+  border-radius: .8rem;
+  width: 100%;
+  padding: 1rem;
+  position: relative;
+}
+
+.container__activities--top .card .work-card:hover,
+.container__activities--top .card .play-card:hover,
+.container__activities--top .card .study-card:hover,
+.container__activities--top .card .exercise-card:hover,
+.container__activities--top .card .social-card:hover,
+.container__activities--top .card .self-card:hover, .container__activities--bottom .card .work-card:hover,
+.container__activities--bottom .card .play-card:hover,
+.container__activities--bottom .card .study-card:hover,
+.container__activities--bottom .card .exercise-card:hover,
+.container__activities--bottom .card .social-card:hover,
+.container__activities--bottom .card .self-card:hover {
+  background-color: #6f76c8;
+  cursor: pointer;
+}
+
+.container__activities--top .card .work-card,
+.container__activities--top .card .play-card,
+.container__activities--top .card .study-card,
+.container__activities--top .card .exercise-card,
+.container__activities--top .card .social-card,
+.container__activities--top .card .self-card, .container__activities--bottom .card .work-card,
+.container__activities--bottom .card .play-card,
+.container__activities--bottom .card .study-card,
+.container__activities--bottom .card .exercise-card,
+.container__activities--bottom .card .social-card,
+.container__activities--bottom .card .self-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container__activities--top .card .work-card--name,
+.container__activities--top .card .play-card--name,
+.container__activities--top .card .study-card--name,
+.container__activities--top .card .exercise-card--name,
+.container__activities--top .card .social-card--name,
+.container__activities--top .card .self-card--name, .container__activities--bottom .card .work-card--name,
+.container__activities--bottom .card .play-card--name,
+.container__activities--bottom .card .study-card--name,
+.container__activities--bottom .card .exercise-card--name,
+.container__activities--bottom .card .social-card--name,
+.container__activities--bottom .card .self-card--name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.container__activities--top .card .work-card--name h3,
+.container__activities--top .card .play-card--name h3,
+.container__activities--top .card .study-card--name h3,
+.container__activities--top .card .exercise-card--name h3,
+.container__activities--top .card .social-card--name h3,
+.container__activities--top .card .self-card--name h3, .container__activities--bottom .card .work-card--name h3,
+.container__activities--bottom .card .play-card--name h3,
+.container__activities--bottom .card .study-card--name h3,
+.container__activities--bottom .card .exercise-card--name h3,
+.container__activities--bottom .card .social-card--name h3,
+.container__activities--bottom .card .self-card--name h3 {
+  font-weight: 500;
+}
+
+.container__activities--top .card .work-card--name svg,
+.container__activities--top .card .play-card--name svg,
+.container__activities--top .card .study-card--name svg,
+.container__activities--top .card .exercise-card--name svg,
+.container__activities--top .card .social-card--name svg,
+.container__activities--top .card .self-card--name svg, .container__activities--bottom .card .work-card--name svg,
+.container__activities--bottom .card .play-card--name svg,
+.container__activities--bottom .card .study-card--name svg,
+.container__activities--bottom .card .exercise-card--name svg,
+.container__activities--bottom .card .social-card--name svg,
+.container__activities--bottom .card .self-card--name svg {
+  margin-top: 1.2rem;
+}
+
+.container__activities--top .card .work-card--details h1,
+.container__activities--top .card .play-card--details h1,
+.container__activities--top .card .study-card--details h1,
+.container__activities--top .card .exercise-card--details h1,
+.container__activities--top .card .social-card--details h1,
+.container__activities--top .card .self-card--details h1, .container__activities--bottom .card .work-card--details h1,
+.container__activities--bottom .card .play-card--details h1,
+.container__activities--bottom .card .study-card--details h1,
+.container__activities--bottom .card .exercise-card--details h1,
+.container__activities--bottom .card .social-card--details h1,
+.container__activities--bottom .card .self-card--details h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  padding-bottom: .5rem;
+}
+
+.container__activities--top .card .work-card--details p,
+.container__activities--top .card .play-card--details p,
+.container__activities--top .card .study-card--details p,
+.container__activities--top .card .exercise-card--details p,
+.container__activities--top .card .social-card--details p,
+.container__activities--top .card .self-card--details p, .container__activities--bottom .card .work-card--details p,
+.container__activities--bottom .card .play-card--details p,
+.container__activities--bottom .card .study-card--details p,
+.container__activities--bottom .card .exercise-card--details p,
+.container__activities--bottom .card .social-card--details p,
+.container__activities--bottom .card .self-card--details p {
+  font-family: .8rem;
+  color: rgba(255, 255, 255, 0.493);
+}
+
+.container__activities--top .card svg, .container__activities--bottom .card svg {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+}
+
+.container__activities--top .card.work, .container__activities--bottom .card.work {
+  background-color: #ff8c66;
+}
+
+.container__activities--top .card.play, .container__activities--bottom .card.play {
+  background-color: #56c2e6;
+}
+
+.container__activities--top .card.study, .container__activities--bottom .card.study {
+  background-color: #ff5c7c;
+}
+
+.container__activities--top .card.exercise, .container__activities--bottom .card.exercise {
+  background-color: #4acf81;
+}
+
+.container__activities--top .card.social, .container__activities--bottom .card.social {
+  background-color: #7536d3;
+}
+
+.container__activities--top .card.self, .container__activities--bottom .card.self {
+  background-color: #f1c65b;
+}
+
+@media only screen and (max-width: 37.5rem) {
+  .container__activities--top, .container__activities--bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container__activities--top .card, .container__activities--bottom .card {
+    height: 12rem;
+    width: 18rem;
+  }
+}
+
+footer {
+  
+}
